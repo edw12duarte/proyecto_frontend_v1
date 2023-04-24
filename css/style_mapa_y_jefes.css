@@ -1,0 +1,373 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header-menu header{
+    position: relative;
+    background-color: rgb(47, 47, 29);
+}
+
+header-menu header .titulo h1, header-menu header .titulo h6, header-menu header nav ul li a{
+    color: white;
+}
+
+
+/* STYLE_MAPA==============================================*/
+
+.section_map {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+}
+
+.section_map .content_description {
+    height: 100%;
+    width: 35%;
+    background: url('../source-ER/others_backgrounds/background_pergamino.jpg') center;
+    background-size: cover;
+} 
+
+.content_description .content_titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 15%;
+    margin: 5% 7.5% 0 ;
+    text-align: center;
+}
+
+.content_titulo h1{
+    font-size: 40px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin: 5% 0;
+    width: auto;
+}
+
+.content_description .content_text {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: 45%;
+    margin: 0 7.5%;
+}
+
+.content_text p{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+    line-height: 200%;
+    padding: 0 10%;
+}
+
+.content_description .content_carrusel{
+    display: block;
+    width: 85%;
+    height: 35%;
+    margin: 0px 7.5%;
+    border-radius: 20px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.content_description .content_carrusel img{
+    height: 100%;
+    width: 100%;
+}
+
+.section_map .map{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 65%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: rgba(0,0,0);
+} 
+
+.map img{
+    height: 100%;
+    width: auto;
+    z-index: 1;
+}
+
+
+/*INICIO ----> Responsive Mapa*/
+
+@media screen and (max-width:1200px ){
+    
+    .content_description .content_text {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .content_text p{
+        line-height: 200%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:1100px ){
+
+    .section_map {
+        display: block;
+    }
+
+    .section_map .content_description {
+        display: inline-flex;
+        height: 200px;
+        width: 100%;
+    }
+
+    .content_description .content_titulo{
+        width: 30%;
+        height: 100%;
+        padding: 10px 2% ;
+        margin: 0;
+    }
+
+    .content_description .content_text {
+        width: 35%;
+        height: 100%;
+        margin: 0;
+        overflow: auto;
+    }
+
+    .content_text p{
+        line-height: 100%;
+        padding-top: 10%;
+    }
+
+    .content_description .content_carrusel{
+        width: 35%;
+        height: 100%;
+        padding: 10px 2%;
+        margin: 0;
+    }
+
+    .section_map .map{
+        height: 600px;
+        width: 100%;
+    } 
+
+}
+
+/*FIN ----> Responsive Mapa*/
+
+/*==========================================================*/
+
+
+/* STYLE_JEFES==============================================*/
+
+.jefes_e_historia {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+}
+
+.jefes_e_historia .statistics, .jefes_e_historia .historia{
+    height: 100%;
+    width: 27.5%;
+    text-align: center;
+    background: url('../source-ER/others_backgrounds/background_pergamino.jpg') center;
+    background-size: cover;
+}
+
+.statistics h1, .historia h1{
+    font-size: 50px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    margin: 10% 0 0;
+}
+
+.statistics div{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10%;
+    height: auto;
+    border-bottom: 2px solid black;
+}
+
+.statistics div h2{
+    width: auto;
+    margin: 0 2%;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.statistics div ul{
+    width: auto;
+    margin: 0 2%;
+    list-style: none;
+    text-align: left ;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.historia .parrafo{
+    width: 90%;
+    height: 80%;
+    margin: 5% 5%;
+    overflow: auto;
+}
+
+.historia .parrafo p{
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5% 1% 0;
+    line-height: 150%;
+}
+
+.jefes_e_historia .boss{
+    height: 100%;
+    width: 50%;
+    background-color: black;
+}
+
+.boss .containt_boss{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.boss .menu_boss{
+    display: inline-flex;
+    justify-content: space-around;
+    height: 15%;
+    width: 100%;
+}
+
+.menu_boss .option{
+    height: 100%;
+    width: 16.6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);;
+}
+
+.menu_boss .option img{
+    height: 80%;
+    width: auto;
+}
+
+
+/*INICIO ----> Responsive Jefes*/
+@media screen and (max-width:1500px ){
+
+    /*responsive de statistics*/
+    .statistics div{
+        display: block;
+    }
+    /*fin--->responsive statistics*/
+
+}
+
+@media screen and (max-width:1300px ){
+
+    .jefes_e_historia {
+        display: block;
+        width: 100%;
+        height: 90vh;
+    }
+
+    /*inicio--->responsive statistics*/
+    .jefes_e_historia .statistics{
+        display: inline-flex;
+        align-items: center;
+        height: 30%;
+        width: 100%;
+    }
+
+    .statistics h1{
+        font-size: 30px;
+        margin: 0 ; 
+        padding: 0 ;
+    }
+
+    .statistics div{
+        height: 100%;
+        width: 20%;
+        border-bottom: 0;
+        border-left: 1px solid black;
+        margin: 0;
+        padding: 50px 0;
+    }
+    /*fin--->responsive statistics*/
+
+
+    /*inicio--->responsive boss*/
+    .jefes_e_historia .boss{
+        height: 70%;
+        width: 100%;
+        display: inline-flex;
+        flex-direction: row-reverse;
+    }
+
+    .boss .containt_boss{
+        height: 100%;
+        width: 100%;
+    }
+
+    .boss .menu_boss{
+        display: block;
+        width: auto;
+        height: 100%;
+    }
+
+    .menu_boss .option{
+        width: 100%;
+        height: 16.6%;
+    }
+
+    .menu_boss .option img{
+        height: 100%;
+    }
+    /*fin--->responsive boss*/
+
+
+    /*inicio--->responsive historia*/
+    .jefes_e_historia .historia{
+        display: flex;
+        height: 30%;
+        width: 100%;
+    }
+
+    .historia h1{
+        margin: auto;
+    }
+
+    .historia .parrafo{
+        width: 85%;
+        height: 100%;
+        margin: 0;
+        padding: 0 2%;
+    }
+    /*fin--->responsive historia*/   
+}
+
+@media screen and (max-width:800px ){
+    .statistics div h2{
+        font-size: 20px;
+    }
+}
+
+/*FIN ----> Responsive Jefes*/
+
+
+/*==========================================================*/
+
+
+
