@@ -19,7 +19,7 @@ class headermenu extends HTMLElement{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: rgba(17, 18, 17, 0.4);
+            background-color: rgb(17, 18, 17, 0.4);
             border-bottom: 10px solid transparent;
             border-image: url('../source-ER/others_backgrounds/separation.png') 40 round ;
             z-index: 100;
