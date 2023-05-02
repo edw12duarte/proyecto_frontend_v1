@@ -11,7 +11,7 @@ class headermenu extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
 
-        <style>
+    <style>
         header {
             width: 100%;
             height: 90px;
@@ -20,8 +20,10 @@ class headermenu extends HTMLElement{
             align-items: center;
             justify-content: space-between;
             background-color: rgb(17, 18, 17, 0.4);
+            /*
             border-bottom: 10px solid transparent;
             border-image: url('../source-ER/others_backgrounds/separation.png') 40 round ;
+            */
             z-index: 100;
         }
         
@@ -137,8 +139,15 @@ class headermenu extends HTMLElement{
                 font-size: 40px;
             }
         
+            @media screen and (max-width: 550px) {
+            
+                header .titulo h1{
+                    font-size: 20px;
+                    margin: 0;
+                }
+            }
         }
-        </style>
+    </style>
 
 
 

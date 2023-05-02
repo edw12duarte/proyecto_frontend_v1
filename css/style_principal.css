@@ -5,11 +5,25 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    background-color: black;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(65, 65, 14);
+}
+
 body{
     background: url('../source-ER/others_backgrounds/background.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 
+}
+
+header-menu header{
+    border-bottom: 10px solid transparent;
+    border-image: url('../source-ER/others_backgrounds/separation.png') 40 round ;
 }
 
 /*/////////////////////////////////////////////////////////////////////////*/
@@ -93,23 +107,26 @@ main{
     background-image: url('../source-ER/others_backgrounds/separation.png');
     background-size: auto;
     background-repeat: repeat-x;
-    z-index: 100;
+    z-index: 3;
 }
 
 /*/////////////////////////////////////////////////////////////////////////*/
 /*CONTAINER_2*/
 
 #container_2{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 140vh;
+    height: auto;
     width: 100%;
+    overflow: hidden;
 }
 
 #container_2 .content{
     display: flex;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
     height: 95%;
     width: 100%;
     overflow: hidden;
@@ -123,10 +140,9 @@ main{
 }
 
 .content h1{
-    position: absolute;
     width: 30%;
-    margin-top: 60px;
-    left: 35%;
+    text-align: center;
+    margin-top: 5%;
     color: rgb(243, 240, 185);
     font-size: 100px;
     font-weight: 800;
@@ -134,10 +150,9 @@ main{
 }
 
 .content article{
-    position: absolute;
     width: 40%;
-    margin-top: 225px;
-    left: 30%;
+    text-align: center;
+    margin-top: 5%;
     color: rgb(243, 240, 185);
     font-size: 20px;
     font-weight: 600;
@@ -146,39 +161,29 @@ main{
 }
 
 .content video{
-    position: absolute;
     width: 40%;
     height: auto;
-    margin-top: 550px;
-    left: 30%;
-
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 
-#container_2 .content_img{
-    position: absolute;
-    display: flex;
-    text-align: center;
-    height: 95%;
-    width: 90%;
-    margin: 2.5% 2.5%;
-    
-}
-
-.content_img .img_1_c2{  
+#container_2 .img_1_c2{  
     position: absolute;
     width: auto;
-    height: 75%;
-    bottom: 0;
+    height: 800px;
+    bottom: 100px;
     left: 0;
     transform: rotateY(180deg) ;
+    z-index: -1;
 }
 
-.content_img .img_2_c2{ 
+#container_2 .img_2_c2{ 
     position: absolute;
     width: auto;
-    height: 90%;
-    bottom: -50px;
+    height: 900px;
+    bottom: 50px;
     right: 0;
+    z-index: -1;
 }
 
 /*/////////////////////////////////////////////////////////////////////////*/
@@ -490,14 +495,14 @@ footer .icons_game, footer .icons_edwin{
 
 
     /*inicio ----> responsive container_2*/
-    .content_img .img_1_c2{  
+    #container_2 .img_1_c2{  
         width: auto;
         height: 55%;
         bottom: 0;
         left: 0;
     }
     
-    .content_img .img_2_c2{ 
+    #container_2 .img_2_c2{ 
         width: auto;
         height: 60%;
         bottom: none;
@@ -507,33 +512,18 @@ footer .icons_game, footer .icons_edwin{
 
     .content article{
         width: 50%;
-        margin-top: 280px;
-        left: 15%;
-        line-height: 150%;
+        line-height: 150%; 
     }
 
     .content video{
         width: 50%;
         height: auto;
-        margin-bottom: 15%;
-        left: 35%;
     }
     /*fin ----> responsive container_2*/
 }
 
 
 @media screen and (max-width: 1300px ) {
-
-    /*inicio ----> responsive container_2*/
-    #container_2{
-        height: 130vh;
-    }
-
-    .content article{
-        margin-top: 220px;
-    }
-    /*fin ----> responsive container_2*/
-    
 
     /*inicio ----> responsive container_3*/
     .text_1 article, .text_2 article{
@@ -548,13 +538,9 @@ footer .icons_game, footer .icons_edwin{
 
     /* INICIO ---> responsive #container_2 */
     .content article{
-        left: 0;
         width: 60%;
     }
 
-    .content video{
-        left: 45%;
-    }
     /* FIN ---> responsive #container_2 */
 
 
@@ -602,37 +588,32 @@ footer .icons_game, footer .icons_edwin{
     }
     /* FIN ---> responsive #container_3 */
 
+
+    #container_4 .other_games{
+        height: 300px;
+    }
 }
 
 @media screen and (max-width: 900px ) {
 
     /* INICIO ---> responsive #container_2 */
-    #container_2{
-        position: relative;
-        height: 120vh;
-    }
-
-    #container_2 .content_img{
+    #container_2 .img_1_c2, #container_2 .img_2_c2 {
         animation: fadeOut 1s ease forwards;  /*Aqui llamo la animacion definida = @keyframes fadeOut*/
     }
 
     .content h1{
-        left: 5%;
         width: 90%;
     }
 
     .content article{
-        left: 5%;
         width: 90%;
     }
 
     .content video{
-        left: 20%;
         width: 60%;
-        margin: 0;
-        bottom: 150px;
     }
     /* FIN ---> responsive #container_2 */
+
 
     /* INICIO ---> responsive footer*/
     .icons_edwin ul, .icons_game ul {
@@ -653,10 +634,6 @@ footer .icons_game, footer .icons_edwin{
     @media screen and (max-width: 630px ){
     
     /* inicio ---> responsive #container_2 */
-    .content video{
-        bottom: 100px;
-    }
-
     .content article{
         overflow: auto;
     }    
