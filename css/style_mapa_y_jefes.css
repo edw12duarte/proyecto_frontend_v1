@@ -4,15 +4,6 @@
     box-sizing: border-box;
 }
 
-header-menu header{
-    position: relative;
-    background-image:linear-gradient( rgb(47, 47, 29), rgb(47, 47, 29), black);
-}
-
-header-menu header .titulo h1, header-menu header .titulo h6, header-menu header nav ul li a{
-    color: white;
-}
-
 ::-webkit-scrollbar {
     background-color: black;
     width: 5px;
@@ -21,6 +12,15 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
 
 ::-webkit-scrollbar-thumb {
     background-color: rgb(65, 65, 14);
+}
+
+header-menu header{
+    position: relative;
+    background-image:linear-gradient( rgb(47, 47, 29), rgb(47, 47, 29), black);
+}
+
+header-menu header .titulo h1, header-menu header .titulo h6, header-menu header nav ul li a{
+    color: white;
 }
 
 /* STYLE_MAPA==============================================*/
@@ -177,7 +177,6 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
     display: flex;
     width: 100%;
     height: 100vh;
-    background-color: black;
 }
 
 .jefes_e_historia .statistics, .jefes_e_historia .historia{
@@ -220,16 +219,6 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
     font-family: 'Times New Roman', Times, serif;
 }
 
-.statistics div ul{
-    width: auto;
-    margin: 0 2%;
-    list-style: none;
-    text-align: left ;
-    font-size: 17px;
-    font-weight: 500;
-    font-family: 'Times New Roman', Times, serif;
-
-}
 
 .historia .parrafo{
     width: 90%;
@@ -257,7 +246,9 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
     display: flex;
     justify-content: center;
     overflow: hidden;
+    background-color: rgb(20, 20, 20);
 }
+
 
 .boss .menu_boss{
     display: flex;
@@ -266,6 +257,7 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
     width: 100%;
     position: relative;
     overflow: hidden;
+    background-color: rgb(20, 20, 20);
 }
 
 .menu_boss .container_menu_slider{
@@ -310,25 +302,6 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
     height: 100%;
 }
 
-.menu_boss #menu-slider-prev {
-    margin: 5% 0;
-    background: white;
-    border-radius: 5px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu_boss #menu-slider-next {
-    margin: 5% 0;
-    background: white;
-    border-radius: 5px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 /*INICIO ----> Responsive Jefes*/
