@@ -8,6 +8,7 @@
 ::-webkit-scrollbar {
     background-color: black;
     width: 5px;
+    height: 5px;
 
 }
 
@@ -32,6 +33,7 @@ header-menu header{
 
 main{
     display: block;
+    position: relative;
 }
 
 #container_1{
@@ -44,7 +46,7 @@ main{
 }
 
 #container_1 .main_vid{
-    height: 120%;
+    height: 125%;
     width: auto;
     z-index: 0;
 }
@@ -485,12 +487,12 @@ footer .icons_game, footer .icons_edwin{
 /*==================================================================*/
 /*Responsive*/
 
+
 @media screen and (max-width: 1600px ) {
 
     /*inicio ----> responsive container_1*/
     #container_1 .container_logo{
         width: 300px;
-        position: 500px;
     }
     /*fin ----> responsive container_1*/
 

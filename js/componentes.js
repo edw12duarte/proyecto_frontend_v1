@@ -159,7 +159,7 @@ class headermenu extends HTMLElement{
         <nav id="menu_nav">
             <ul>
                 <li class="info" >
-                    <a href="index_principal.html">Inicio</a>
+                    <a href="index.html">Inicio</a>
                 </li>
                 <li class="jefes">
                     <a href="jefes_y_lore.html">Jefes y Lore</a>
@@ -168,7 +168,7 @@ class headermenu extends HTMLElement{
                     <a href="mapa.html">Mapa</a>
                 </li>
                 <li class="contact">
-                    <a href="index_principal.html\#footer">Contacto</a>
+                    <a href="index.html\#footer">Contacto</a>
                 </li>
             </ul>
         </nav>

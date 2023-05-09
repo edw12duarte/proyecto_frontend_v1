@@ -7,7 +7,13 @@
     <script src="https://kit.fontawesome.com/a77799d92d.js" crossorigin="anonymous"></script>
     <script src="js/scrollreveal.js"></script>
     <link rel="stylesheet" href="css/style_mapa_y_jefes.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+    <title>Mapa Elden ring</title>
 </head>
 <body>
     <header-menu>    <!--Esta etiqueta tre el HEADER con todo su STYLE-->
@@ -18,18 +24,21 @@
                 <h1>Lago de Liurnia</h1>
             </div>
             <div class="content_text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum quod, placeat quaerat neque non temporibus! Blanditiis eius cupiditate consectetur nisi aliquid at sint dolores. Ipsum totam necessitatibus velit dicta. Optio molestiae adipisci illo architecto quibusdam sed similique dolores deserunt eveniet animi, fuga libero fugit. Mollitia soluta ipsam ea asperiores?</p>
+                <p>Con sus aguas poco profundas y sus vastos humedales, la región de Liurnia está plagada del hundimiento graduales en la mayor parte de su masa continental. Con sus bosques perpetuamente cubiertos de niebla, se escuchan misteriosos sonidos de campanas en la distancia.</p>
             </div>
             <div class="content_carrusel">
-                <img src="source-ER/img_carrusel_map/liurnia/img_1_liurnia.jpg" alt="img_1_liurnia">
+                <img src="source-ER/img_carrusel_map/zona3/img_1.jpg" alt="img_1_zona#">
+                <img src="source-ER/img_carrusel_map/zona3/img_2.jpg" alt="img_2_zona#">
+                <img src="source-ER/img_carrusel_map/zona3/img_3.jpg" alt="img_3_zona#">
+                <img src="source-ER/img_carrusel_map/zona3/img_1.jpg" alt="img_1_zona#">
             </div>
         </div>
-        <div class="map">
-            <img src="source-ER/map_ER.jpg" alt="map">
+        <div id="map">
         </div>
     </section>
-    <script src="js/javascript_interactividad.js"></script>
+
     <script src="js/componentes.js"></script>
     <script src="js/desplegable_ani-scroll.js"></script>
+    <script src="js/mapa.js"></script>
 </body>
 </html>

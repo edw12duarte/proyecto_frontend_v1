@@ -77,7 +77,7 @@ window.sr = ScrollReveal();
     });
 
     /*Animaciones jefes */
-    sr.reveal('.containt_boss', {
+    sr.reveal('.imagen_boss', {
         duration : 1200,
         origin: 'bottom',
         distance: '200px'

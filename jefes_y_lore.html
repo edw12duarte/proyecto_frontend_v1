@@ -7,11 +7,19 @@
     <script src="https://kit.fontawesome.com/a77799d92d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style_mapa_y_jefes.css">
     <script src="js/scrollreveal.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+    <title>Jefes Elden ring</title>
 </head>
 <body>
-    <header-menu>    <!--Esta etiqueta tre el HEADER con todo su STYLE-->
+    <header-menu>   
     </header-menu>
+
+    <!--Se utilizan etiquetas 'p' y 'br', debido a que se facilita al momento de la actualizacion de la informacion de cada jefe-->
     <section class="jefes_e_historia">
         <div class="statistics">
             <h1>Godrick el injertado</h1>
@@ -48,6 +56,7 @@
                 </div>
             </div>
         </div>
+
         <div class="boss">
             <div class="containt_boss">
                 <img class="imagen_boss" src="source-ER/img_jefes/img_1_jefes_godrick.png" alt="jefes">
@@ -120,14 +129,15 @@
                 </div>
             </div>
         </div>
+
         <div class="historia">
             <h1>Historia</h1>
             <div class="parrafo">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo commodi quisquam magni iste reprehenderit ut quod eligendi accusamus adipisci ab vero debitis enim aperiam repudiandae quis perspiciatis, laudantium quidem provident nisi tenetur. Qui cupiditate earum atque quis, et laboriosam iste rem? Temporibus eveniet doloribus asperiores doloremque quibusdam minima sequi sit natus perspiciatis non? Placeat beatae soluta aut accusamus doloribus maxime illum repudiandae at inventore dignissimos. Animi reiciendis eveniet corrupti officiis ab, incidunt, consequuntur ex ducimus quas id rem quos maiores sit, nisi harum quae cum nam unde. Illo repellat dicta eaque ea necessitatibus cumque quam beatae, placeat tempora. Ut, quisquam.</p>
+                <p> Godrick, otro descendiente del linaje formado por Márika y su primer consorte. Antaño, antes incluso de la era del Árbol Áureo, Godfrey se erigió como héroe de guerra contra los gigantes de fuego y acabó siendo designado por la Voluntad Mayor —la entidad detrás del Orden Dorado— como el primer Señor del Círculo. Él, junto a Márika, dio origen a los primeros semidioses (como Godwyn el Dorado). Y él, también, proyectó una larga sombra de la que la mayoría de sus descendientes nunca podrían salir. Uno de ellos fue Godefroy, antecesor de Godrick, y pionero en la grotesca práctica de los injertos.<br><br>Debido a ello, Godefroy fue encerrado en una cárcel eterna cercana a la capital, pero eso no disuadió a Godrick de seguir sus pasos. Con Godfrey exiliado (de nuevo, ahondaremos en los planes de Márika en un texto aparte), la sangre divina diluida por el paso de las generaciones y clara incapacidad para hacer frente a los semidioses —un monumento de Necrolimbo recoge su humillación ante Malenia—, Godrick empezó a injertarse tanto a sí mismo como a otros nobles en un desesperado intento por restaurar el poder del linaje dorado. Y funcionó, al menos hasta cierto punto: se hizo con una de las Grandes Runas y se estableció como el señor del castillo de Velo Tormentoso, majestuosa fortaleza de un rey que antaño cayera a manos de Godfrey.</p>
             </div>
         </div>
     </section>
-    <script src="js/javascript_interactividad.js"></script>
+    <script src="js/jefes_cambios.js"></script>
     <script src="js/componentes.js"></script>
     <script src="js/desplegable_ani-scroll.js"></script>
 </body>

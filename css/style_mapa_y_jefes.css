@@ -57,6 +57,24 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
     width: auto;
 }
 
+.my_tooltip{
+    background: rgba(0, 0, 0, 0.505)!important;
+    border: 1px solid #000 !important;
+    color: rgb(218, 220, 209) !important;
+    padding: 6px 12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.my_tooltip_jefe{
+    background: rgba(88, 29, 29, 0.505)!important;
+    border: 1px solid #000 !important;
+    color: rgb(218, 220, 209) !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+
 .content_description .content_text {
     display: flex;
     justify-content: center;
@@ -74,22 +92,24 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
     padding: 0 10%;
 }
 
+
 .content_description .content_carrusel{
     display: block;
     width: 85%;
     height: 35%;
-    margin: 0px 7.5%;
+    margin: 0px 7.5% ;
+    padding: 0;
     border-radius: 20px;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-.content_description .content_carrusel img{
+.content_carrusel img{
     height: 100%;
     width: 100%;
+    animation: 10s slidy infinite;
 }
 
-.section_map .map{
+.section_map #map{
     display: flex;
     justify-content: center;
     height: 100%;
@@ -99,7 +119,7 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
     background-color: rgba(0,0,0);
 } 
 
-.map img{
+#map img{
     height: 100%;
     width: auto;
     z-index: 1;
@@ -138,13 +158,14 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
         height: 100%;
         padding: 10px 2% ;
         margin: 0;
+        overflow-y: auto;
     }
 
     .content_description .content_text {
         width: 35%;
         height: 100%;
         margin: 0;
-        overflow: auto;
+        overflow-y: auto;
     }
 
     .content_text p{
@@ -159,7 +180,7 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
         margin: 0;
     }
 
-    .section_map .map{
+    .section_map #map{
         height: 600px;
         width: 100%;
     } 
@@ -167,6 +188,17 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
 }
 
 /*FIN ----> Responsive Mapa*/
+
+@keyframes slidy {
+    0%  {transform: translateY(0%); }
+    15% {transform: translateY(0%); }
+    20% { transform: translateY(-100%); }
+    50% { transform: translateY(-100%); }
+    55% { transform: translateY(-205%); }
+    85% { transform: translateY(-205%); }
+    90% { transform: translateY(-305%); }
+    100%{ transform: translateY(-305%); }
+}
 
 /*==========================================================*/
 
@@ -183,7 +215,7 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
     height: 100%;
     width: 27.5%;
     text-align: center;
-    background: url('../source-ER/others_backgrounds/background_pergamino.jpg') center;
+    background: url('../source-ER/others_backgrounds/background_pergamino.jpg') center; 
     background-size: cover;
     overflow: auto;
 }
@@ -219,7 +251,6 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
     font-family: 'Times New Roman', Times, serif;
 }
 
-
 .historia .parrafo{
     width: 90%;
     height: 80%;
@@ -237,7 +268,7 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
 .jefes_e_historia .boss{
     height: 100%;
     width: 50%;
-    background-color: black;
+    background-color: rgb(20, 20, 20);
 }
 
 .boss .containt_boss{
@@ -248,7 +279,6 @@ header-menu header .titulo h1, header-menu header .titulo h6, header-menu header
     overflow: hidden;
     background-color: rgb(20, 20, 20);
 }
-
 
 .boss .menu_boss{
     display: flex;
