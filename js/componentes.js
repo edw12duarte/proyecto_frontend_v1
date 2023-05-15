@@ -24,7 +24,7 @@ class headermenu extends HTMLElement{
             border-bottom: 10px solid transparent;
             border-image: url('../source-ER/others_backgrounds/separation.png') 40 round ;
             */
-            z-index: 100;
+            z-index: 10000;
         }
         
         header .titulo{

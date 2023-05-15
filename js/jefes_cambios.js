@@ -43,7 +43,7 @@ links.forEach((item,index)=>{
 
 function cambiar_datos(index){
     const xhttp = new XMLHttpRequest();
-    xhttp.open('GET','../json/datos_jefes_listos.json', true);
+    xhttp.open('GET','json/datos_jefes_listos.json', true);
     xhttp.send();
 
     xhttp.onreadystatechange = function(){
