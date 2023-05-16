@@ -108,10 +108,11 @@ class headermenu extends HTMLElement{
             
             #menu_h{
                 display: block;
+                
             }
         
             header #menu_nav{
-                position: fixed;
+                position: absolute;
                 height: 400px;
                 width: 100%;
                 top: 90px;
