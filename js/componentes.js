@@ -20,10 +20,6 @@ class headermenu extends HTMLElement{
             align-items: center;
             justify-content: space-between;
             background-color: rgb(17, 18, 17, 0.4);
-            /*
-            border-bottom: 10px solid transparent;
-            border-image: url('../source-ER/others_backgrounds/separation.png') 40 round ;
-            */
             z-index: 10000;
         }
         
@@ -112,11 +108,11 @@ class headermenu extends HTMLElement{
             }
         
             header #menu_nav{
-                position: fixed;
+                position: absolute;
                 height: 400px;
                 width: 100%;
-                top: 90px;
-                left: 100%;
+                top: -900px;
+                /*left: 100%;*/
                 background-color: rgba(130, 130, 130, 0.7);
                 transition:  all 1s ;
             }
