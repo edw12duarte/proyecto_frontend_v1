@@ -19,7 +19,8 @@ class headermenu extends HTMLElement{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background-color: rgb(17, 18, 17, 0.4);
+            background-color: rgb(17, 18, 17, 0.5);
+            backdrop-filter: blur(10px);
             z-index: 10000;
         }
         
